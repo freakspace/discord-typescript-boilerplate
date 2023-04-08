@@ -1,0 +1,30 @@
+{
+  "name": "mm_discord_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/bot.js",
+    "dev": "tsc-watch --onSuccess \"node dist/bot.js\"",
+    "deploy": "ts-node src/deploy-commands.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/builders": "^1.6.1",
+    "@discordjs/rest": "^1.7.0",
+    "@types/node": "^18.15.11",
+    "@types/ws": "^8.5.4",
+    "discord-api-types": "^0.37.37",
+    "discord.js": "^14.9.0",
+    "dotenv": "^16.0.3",
+    "prettier": "^2.8.7",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "tsc-watch": "^6.0.0"
+  }
+}
